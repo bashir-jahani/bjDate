@@ -59,10 +59,10 @@ public class bj_date {
 
 		}
 
-		Log.e("GGN","dateSTR: " + dateSTR);
+		Log.e("bj modules","dateSTR: " + dateSTR);
 		try {
 			date = format.parse(dateSTR);
-			Log.e("GGN","1:"+date.toString());
+			Log.e("bj modules","1:"+date.toString());
 		} catch (Exception e) {
 			// Second Try
 			if (WithTime) {
@@ -76,7 +76,7 @@ public class bj_date {
 			}
 			try {
 				date = format.parse(dateSTR);
-				Log.e("GGN","2:"+date.toString());
+				Log.e("bj modules","2:"+date.toString());
 			}catch (Exception e1){
 
 			}
@@ -94,7 +94,7 @@ public class bj_date {
 			date=Calendar.getInstance().getTime();
 
 		}
-		Log.e("GGN","3:"+date.toString());
+		Log.e("bj modules","3:"+date.toString());
 		//***********
 		DateFormat dfy = new SimpleDateFormat("yyyy");
 		DateFormat dfm = new SimpleDateFormat("MM");
@@ -124,7 +124,7 @@ public class bj_date {
 		}else {
 			textView.setInputType(InputType.TYPE_DATETIME_VARIATION_DATE);
 		}
-		Log.e("GGN",mYear + "/" + mMonth + "/" + mDay + " " + mHour + ":" + mMinute + ":" + mSecond);
+		Log.e("bj modules",mYear + "/" + mMonth + "/" + mDay + " " + mHour + ":" + mMinute + ":" + mSecond);
 		Dialog DPD = new DatePickerDialog(textView.getContext(), new DatePickerDialog.OnDateSetListener() {
 			@Override
 			public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
